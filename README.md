@@ -1,19 +1,9 @@
-# vue-blog
+A simple quiz app using VueJS.
 
-## Project setup
-```
-npm install
-```
+An app with 20 questions to be answered within 20 minutes and display results after the test is taken.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This little project will help me sharpen my skills in VueJs.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+To be completed in a week time, at 20% completion currently.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Feel free to help with the coding. Live project to be released soon.

@@ -5,13 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="main.css">
+    <title>Quiz app</title>
   </head>
-  <body>
+  <body class="antialiased bg-subMain">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <!-- <div id="app"></div> -->
+    <div class="w-full h-screen flex justify-center items-center">
+      <!-- <div class="max-w-xl w-full py-10 px-8 shadow-2xl rounded-sm">
+        <h1 class="mb-6 text-center font-bold text-xl tracking-wider">
+          Quiz Categories
+        </h1>
+          <section>
+            <div class="grid grid-cols-3 gap-10">
+              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
+                <div>
+                  <i></i>
+                  <p class="font-semibold text-sm">Mathematics</p>
+                </div>
+              </a>
+  
+              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
+                <div>
+                  <i></i>
+                  <p class="font-semibold text-sm">History</p>
+                </div>
+              </a>
+  
+              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
+                <div>
+                  <i></i>
+                  <p class="font-semibold text-sm">Science</p>
+                </div>
+              </a>
+  
+              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
+                <div>
+                  <i></i>
+                  <p class="font-semibold text-sm">Tech</p>
+                </div>
+              </a>
+  
+              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
+                <div>
+                  <i></i>
+                  <p class="font-semibold text-sm">HTML</p>
+                </div>
+              </a>
+  
+              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
+                <div>
+                  <i></i>
+                  <p class="font-semibold text-sm">CSS</p>
+                </div>
+              </a>
+            </div>
+          </section>
+      </div> -->
+      <div class="max-w-xl w-full py-10 px-8 shadow-2xl bg-main rounded-sm">
+        <section>
+          <div>
+            <p class="text-gray-500 font-semibold text-xl">Mathematics quiz</p>
+            <p class="text-2xl text-gray-300 font-semibold">Question <span class="text-gray-100 text-3xl">06</span><span class="text-gray-500">/20</span></p>
+          </div>
+
+          <div class="py-10 text-lg text-gray-300 font-semibold">
+            <p>
+              Who is the the richest man in the world?
+            </p>
+          </div>
+
+          <form class="grid grid-cols-2 gap-10">
+            <label for="ans" class="flex justify-between border-2 border-gray-500 p-10 relative rounded-md">
+              <p class="text-gray-500 text-md font-semibold">Elon Musk</p>
+              <input type="checkbox" class="absolute top-4 right-4 bg-transparent border-2 border-gray-500 rounded-full">
+            </label>
+
+            <label for="ans" class="flex justify-between border-2 border-green p-10 relative rounded-md">
+              <p class="text-green text-lg font-semibold">Dangote</p>
+              <input type="checkbox" class="absolute top-4 right-4 bg-transparent bg-green rounded-full">
+            </label>
+
+            <label for="ans" class="flex justify-between border-2 border-gray-500 p-10 relative rounded-md">
+              <p class="text-gray-500 text-md font-semibold">Jeff Bezos</p>
+              <input type="checkbox" class="absolute top-4 right-4 bg-transparent border-2 border-gray-500 rounded-full">
+            </label>
+
+            <label for="ans" class="flex justify-between border-2 border-red p-10 relative rounded-md">
+              <p class="text-red text-lg font-semibold">Arthur Eze</p>
+              <input type="checkbox" class="absolute top-4 right-4 bg-transparent border-2 border-gray-500 rounded-full">
+            </label>
+          </form>
+
+          <div class="mt-12 flex justify-between">
+            <a href="#" class="text-gray-300 text-lg">Quit quiz</a>
+            <a href="#" class="py-4 px-16 text-white font-semibold text-center bg-blue rounded-md">Next</a>
+          </div>
+        </section>
+      </div>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
