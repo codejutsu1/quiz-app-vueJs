@@ -12,100 +12,40 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <!-- <div id="app"></div> -->
-    <div class="w-full h-screen flex justify-center items-center">
-      <!-- <div class="max-w-xl w-full py-10 px-8 shadow-2xl rounded-sm">
-        <h1 class="mb-6 text-center font-bold text-xl tracking-wider">
-          Quiz Categories
-        </h1>
-          <section>
-            <div class="grid grid-cols-3 gap-10">
-              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
-                <div>
-                  <i></i>
-                  <p class="font-semibold text-sm">Mathematics</p>
-                </div>
-              </a>
-  
-              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
-                <div>
-                  <i></i>
-                  <p class="font-semibold text-sm">History</p>
-                </div>
-              </a>
-  
-              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
-                <div>
-                  <i></i>
-                  <p class="font-semibold text-sm">Science</p>
-                </div>
-              </a>
-  
-              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
-                <div>
-                  <i></i>
-                  <p class="font-semibold text-sm">Tech</p>
-                </div>
-              </a>
-  
-              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
-                <div>
-                  <i></i>
-                  <p class="font-semibold text-sm">HTML</p>
-                </div>
-              </a>
-  
-              <a href="#" class="py-10 px-12 bg-white rounded-md tracking-wider shadow-lg">
-                <div>
-                  <i></i>
-                  <p class="font-semibold text-sm">CSS</p>
-                </div>
-              </a>
-            </div>
-          </section>
+    <div id="app"></div>
+      <!-- <div class="max-w-xl w-full py-10 h-screen md:h-fit px-8 shadow-2xl bg-main rounded-sm">
+        <h1 class="text-center font-semibold text-xl text-white">Quiz Result</h1>
+        <div class="my-5 flex justify-center">
+          <img src="images/trophy.png" alt="Winner trophy" width="150">
+        </div>
+
+        <div>
+          <h2 class="text-center font-semibold text-2xl text-white">
+            Congratulations!
+          </h2>
+          <p class="text-center text-gray-300 my-3 font-semibold text-sm">
+            You passed 100% of applicants. Endevour to try again to understand better.
+          </p>
+        </div>
+
+        <div class="text-center font-semibold tracking-wider my-8">
+          <h3 class="text-sm text-gray-500 mt-1">
+            YOUR SCORE
+          </h3>
+          <p class="text-4xl my-3 font-bold text-white">
+            <span class="text-green">20</span> / 20
+          </p>
+        </div>
+
+        <div class="my-5 flex justify-between">
+          <a href="#" class="py-4 md:px-12 px-8 text-gray-500 font-semibold text-center bg-white rounded-lg">Share Results</a>
+          <a href="#" class="py-4 md:px-12 px-8 text-white font-semibold text-center bg-blue rounded-lg">Take New Quiz</a>
+        </div>
+
+        <div class="rounded-full border-2 border-white bg-gray-500 text-white flex items-center justify-center mx-auto text-2xl" style="width: 70px; height: 70px;">
+          x
+        </div>
       </div> -->
-      <div class="max-w-xl w-full py-10 px-8 shadow-2xl bg-main rounded-sm">
-        <section>
-          <div>
-            <p class="text-gray-500 font-semibold text-xl">Mathematics quiz</p>
-            <p class="text-2xl text-gray-300 font-semibold">Question <span class="text-gray-100 text-3xl">06</span><span class="text-gray-500">/20</span></p>
-          </div>
-
-          <div class="py-10 text-lg text-gray-300 font-semibold">
-            <p>
-              Who is the the richest man in the world?
-            </p>
-          </div>
-
-          <form class="grid grid-cols-2 gap-10">
-            <label for="ans" class="flex justify-between border-2 border-gray-500 p-10 relative rounded-md">
-              <p class="text-gray-500 text-md font-semibold">Elon Musk</p>
-              <input type="checkbox" class="absolute top-4 right-4 bg-transparent border-2 border-gray-500 rounded-full">
-            </label>
-
-            <label for="ans" class="flex justify-between border-2 border-green p-10 relative rounded-md">
-              <p class="text-green text-lg font-semibold">Dangote</p>
-              <input type="checkbox" class="absolute top-4 right-4 bg-transparent bg-green rounded-full">
-            </label>
-
-            <label for="ans" class="flex justify-between border-2 border-gray-500 p-10 relative rounded-md">
-              <p class="text-gray-500 text-md font-semibold">Jeff Bezos</p>
-              <input type="checkbox" class="absolute top-4 right-4 bg-transparent border-2 border-gray-500 rounded-full">
-            </label>
-
-            <label for="ans" class="flex justify-between border-2 border-red p-10 relative rounded-md">
-              <p class="text-red text-lg font-semibold">Arthur Eze</p>
-              <input type="checkbox" class="absolute top-4 right-4 bg-transparent border-2 border-gray-500 rounded-full">
-            </label>
-          </form>
-
-          <div class="mt-12 flex justify-between">
-            <a href="#" class="text-gray-300 text-lg">Quit quiz</a>
-            <a href="#" class="py-4 px-16 text-white font-semibold text-center bg-blue rounded-md">Next</a>
-          </div>
-        </section>
-      </div>
-    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>

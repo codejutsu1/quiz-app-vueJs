@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    './public/index.html'
+    './public/index.html',
+    './views/home.vue'
   ],
   theme: {
     extend: {
