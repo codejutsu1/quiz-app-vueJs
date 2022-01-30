@@ -19,10 +19,10 @@
               v-for="answer,key in maths[index]['answers']" 
               :key="answer"  
               class="flex justify-between border-2 border-gray-500 md:p-10 p-5 md:relative md:rounded-md rounded-2xl"
-              :class="{'border-green bg-white' : key == maths[index]['correctAnswer'] && selectedAnswer != ''}"
+              :class="{'border-green' : key == maths[index]['correctAnswer'] && selectedAnswer != ''}"
               >
               <!-- <p class="md:absolute top-2 text-white left-4 font-bold text-2xl"> {{ key }}</p> -->
-              <p class="text-gray-500 text-md font-semibold"> {{ answer }}</p>
+              <p class="text-gray-500 text-md font-semibold" :class="{'text-green text-lg' : key == maths[index]['correctAnswer'] && selectedAnswer != ''}"> {{ answer }}</p>
               <input 
                 type="radio" 
                 :id="key" 
