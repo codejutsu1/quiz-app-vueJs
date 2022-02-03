@@ -1,5 +1,5 @@
 <template>
-  <Questions :questions="historyQuiz"/>
+  <Questions :questions="historyQuiz" :course="name"/>
 </template>
 
 <script>
@@ -9,6 +9,7 @@ export default {
   components: { Questions },
   data() {
     return {
+        name: 'History',  
       historyQuiz: [
         {
             "id": 1,

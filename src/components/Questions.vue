@@ -4,7 +4,7 @@
         <div class="max-w-xl w-full py-10 px-8 h-screen md:h-fit shadow-2xl bg-main rounded-sm">
             <section>
             <div>
-                <p class="text-gray-500 font-semibold text-xl">Mathematics quiz</p>
+                <p class="text-gray-500 font-semibold text-xl">{{ course }} quiz</p>
                 <p class="text-2xl text-gray-300 font-semibold">Question <span class="text-gray-100 text-3xl">{{ questions[index]['id'] }}</span><span class="text-gray-500">/{{ questions.length }}</span></p>
             </div>
 
@@ -60,7 +60,7 @@ import Result from '../components/Result.vue'
 
 export default {
     components: { Result },
-    props: ['questions'],
+    props: ['questions', 'course'],
     data() {
         return {
             selectedAnswer: '',

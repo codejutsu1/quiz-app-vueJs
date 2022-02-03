@@ -1,5 +1,5 @@
 <template>
-  <Questions :questions="maths"/>
+  <Questions :questions="maths" :course="name"/>
 </template>
 
 <script>
@@ -9,6 +9,7 @@ export default {
   components: { Questions },
   data() {
     return {
+      name: 'Mathematics',
        maths: [
         {
             "id": 1,
