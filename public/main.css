@@ -609,6 +609,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: rgb(139 29 73 / var(--tw-border-opacity));
+}
+
 .border-green {
   --tw-border-opacity: 1;
   border-color: rgb(16 198 155 / var(--tw-border-opacity));
@@ -748,14 +753,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-red {
+  --tw-text-opacity: 1;
+  color: rgb(139 29 73 / var(--tw-text-opacity));
+}
+
 .text-green {
   --tw-text-opacity: 1;
   color: rgb(16 198 155 / var(--tw-text-opacity));
 }
 
-.text-red {
+.text-yellow-200 {
   --tw-text-opacity: 1;
-  color: rgb(139 29 73 / var(--tw-text-opacity));
+  color: rgb(254 240 138 / var(--tw-text-opacity));
+}
+
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
 .antialiased {

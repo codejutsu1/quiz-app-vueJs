@@ -20,10 +20,10 @@
                 v-for="answer,key in questions[index]['answers']" 
                 :key="answer"  
                 class="flex justify-between border-2 border-gray-500 md:p-10 p-5 md:relative md:rounded-md rounded-2xl"
-                :class="{'border-green' : key == questions[index]['correctAnswer'] && selectedAnswer != ''}"
+                :class="{'border-red': selectedAnswer == key && selectedAnswer != questions[index]['correctAnswer'],'border-green' : key == questions[index]['correctAnswer'] && selectedAnswer != ''}"
                 >
                 <!-- <p class="md:absolute top-2 text-white left-4 font-bold text-2xl"> {{ key }}</p> -->
-                <p class="text-gray-500 text-md font-semibold" :class="{'text-green text-lg' : key == questions[index]['correctAnswer'] && selectedAnswer != ''}"> {{ answer }}</p>
+                <p class="text-gray-500 text-md font-semibold" :class="{'text-red text-lg' : selectedAnswer == key && selectedAnswer != questions[index]['correctAnswer'],'text-green text-lg' : key == questions[index]['correctAnswer'] && selectedAnswer != ''}"> {{ answer }}</p>
                 <input 
                     type="radio" 
                     :id="key" 
@@ -44,7 +44,15 @@
         </div>
     </div>
   </div>
-  <Result v-show="showResult" :correctScore="correctScore" :wrongScore="wrongScore" :totalScore="totalScore" :percent="percent"/>
+  <Result 
+    v-show="showResult" 
+    :correctScore="correctScore" 
+    :wrongScore="wrongScore" 
+    :totalScore="totalScore" 
+    :percent="percent"
+    :grade="grade"
+    :color="color" 
+    />
 </template>
 
 <script>
@@ -62,7 +70,10 @@ export default {
             totalScore: 0,
             percent: 0,
             showResult: false,
-            showQuestion: true
+            showQuestion: true,
+            grade: '',
+            color: null
+
         }
     },
 
@@ -86,6 +97,27 @@ export default {
             this.showQuestion = false;
             this.totalScore = this.correctScore + this.wrongScore;
             this.percent = (this.correctScore * 100)/this.totalScore;
+
+            if(this.percent > 75){
+                this.grade = 'A';
+                this.color = 'green';
+            }else if(this.percent > 60){
+                this.grade = 'B';
+                this.color = 'yellow';
+            }else if(this.percent > 40){
+                this.grade = 'C';
+                this.color = 'orange'
+            }else{
+                this.grade = 'F';
+                this.color = 'red'
+            }
+        },
+
+        resetQuiz() {
+            this.index = 0;
+            this.selectedAnswer = '';
+            this.correctScore = 0;
+            this.wrongScore = 0;
         }
     }
 }
